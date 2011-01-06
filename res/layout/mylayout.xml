@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical" 
+  android:padding="3dp">
+  
+  	<LinearLayout
+ 	  android:id="@+id/parameterLayout"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:padding="3dp" >
+	  	<TextView android:id="@+id/labelVel"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:maxHeight="14dp"
+		android:text="Velocity"/>
+	  	
+		<SeekBar
+		android:id="@+id/seekbarVel"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:maxHeight="14dp"
+		android:layout_weight="4"/>
+		
+		<Button android:id="@+id/playButton"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:maxHeight="14dp"
+		android:text="Play"/>
+		
+	</LinearLayout>    
+	
+	<LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:padding="3dp" >
+	  	<TextView android:id="@+id/labelAngle"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:maxHeight="14dp"
+		android:text="Angle"/>
+		<SeekBar
+		android:id="@+id/seekbarAngle"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:maxHeight="14dp"
+		android:layout_weight="4"/>
+	</LinearLayout>
+	
+	<com.tank.GameView
+     android:id="@+id/gameview"
+   	 android:layout_width="fill_parent" 
+     android:layout_height="wrap_content"
+     android:layout_weight="1"/>/>
+          
+</LinearLayout>
